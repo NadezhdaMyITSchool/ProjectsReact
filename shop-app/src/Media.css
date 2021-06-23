@@ -1,0 +1,204 @@
+@media (min-width: 1025px) {
+    .collections__wrapper {
+        grid-auto-rows: minmax(150px, 210px);
+        grid-template-columns: repeat(4, 1fr);       
+    }
+    .collections__women {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;  /* занимает место с 1 по 3*/
+    }
+    .collections__women h2 {
+        margin-bottom: 18px;
+    }
+    .collections__women p {
+        margin-bottom: 24px;
+    }
+    .collections__wrapper .collections__bestsellers {
+        grid-row: 1;
+        grid-column: 3;
+    }
+    .collections__dresses {
+        grid-row: 1;
+        grid-column: 4;
+    }
+    .denim__jackets {
+        grid-row: 2;
+        grid-column: 3 / 5;
+    }
+
+    .footer-main__wrapper {        
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 90px;
+    }
+    .footer-main__item ul {        
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner__wrapper {
+        width: 60%;
+    }
+    .collections__wrapper {
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, 210px);
+        grid-gap: 25px;
+        justify-content: space-evenly;     
+    }
+
+    .product-list__wrapper {
+        grid-template-columns: repeat(3, 33%);
+        grid-gap: 20px;
+    }
+    .product-list__item {
+        padding: 15px;
+    }
+    .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;    
+
+    }
+    .product__wrapper {
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+    .product__info-img {
+        padding: 0 0 20px;
+    }
+    .product__info-img img{
+        width: 20%;
+    }
+
+
+    .footer h3 {
+        margin-bottom: 20px;
+    }
+    .footer-main__wrapper {
+        row-gap: 20px;
+    }
+    .footer-main__item ul {
+        display: flex;
+        margin-left: 20px;
+        list-style-type: disc;     
+        column-gap: 40px;   
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 34px;
+        /* line-height: ; */
+    }
+    .btn {
+        font-size: 16px;
+        height: 35px;
+        padding: 0 16px;
+    }
+    .header .container,
+    .banner .container, 
+    .collections .container,
+    .footer .container,
+    .product-list .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;    
+
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__top {
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    .banner {
+        height: 400px;
+        background-size: cover;
+    }
+    .banner__wrapper {
+        width: 60%;
+    }
+    .banner h1, .banner p {
+        margin-bottom: 20px;
+    }
+    
+
+    .collections__wrapper {
+        grid-template-columns: repeat(2, 230px);
+        grid-template-rows: repeat(2, 180px);
+        grid-gap: 15px;   
+    }
+    .collections__wrapper > div {
+        padding: 15px;
+    }
+    .collections__wrapper h2 {
+        font-size: 1.1em;
+    }
+    .product-list__item-img {
+        height: 150px;
+    }
+    .product-list__item-title {
+        font-size: 20px;
+    }
+    .product-list__wrapper {
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-gap: 10px;
+    }
+    .product-list__item-desc {
+        margin-bottom: 15px;
+    }
+    .product-list__item-price {
+        font-size: 18px;
+    }
+    .product-list__item-price span {
+        font-size: 24px;
+    }
+    
+    .cart-list__item {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 20px;
+        padding: 20px;
+    }
+    .cart-list__item-price span {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 640px) {
+    .collections__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 180px);
+        grid-gap: 10px;   
+    }
+    .product-list__wrapper {
+        /* grid-template-columns: repeat(4, 1fr);  */
+        grid-gap: 10px;
+    }
+    .product-list__item-img {
+        height: 130px;
+        background-size: 60%;
+    }
+    .product-list__item-price, .product-list__item-title {
+        margin-bottom: 10px;
+    }
+    .product-list__item-desc {
+        display: none;
+    }
+    .product-list__item-bot {
+        flex-direction: column;
+    }
+    .footer-social__icon a:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .product-list__wrapper {
+     grid-template-columns: repeat(2, 50%);  
+    }
+}
